@@ -1,0 +1,248 @@
+﻿Version     0.0
+Platform    Gen4-uLCD-43DCT-CLB-L
+PlatRes     272x480
+Depends
+end
+Options
+    Genie
+    Speed                        9600
+    Checksum                     No
+    ResponseSize                 2
+    Multidrop                    No
+    Destination                  1
+    DestBank                     0
+    MainForm                     0
+    SndBuf                       0
+    ButtonDisable                No
+    SignedDigits                 No
+end
+Form
+    Name                         Form0
+    Alias                        Form0
+    Bgtype                       Image
+    Color                        BLACK
+    Image                        BG.png
+    Source.Height                272
+    Source.Left                  0
+    Source.Top                   0
+    Source.Width                 479
+    OnActivate                   ''
+    OnCreate                     ''
+    OnRepeat                     ''
+    OnTouchMoving                ''
+    OnTouchPressed               ''
+    OnTouchReleased              ''
+end
+Scope
+    Name                         Scope0
+    Alias                        Scope0
+    Color                        0x262626
+    GraticuleColor               SEASHELL
+    GraticuleVisible             Yes
+    GraticuleXinc                10
+    GraticuleYinc                10
+    Height                       220
+    Left                         130
+    RefreshIncrement             1
+    Top                          41
+    Trace1Color                  DEEPSKYBLUE
+    Trace2Color                  CHARTREUSE
+    Trace3Color                  YELLOW
+    Trace4Color                  FUCHSIA
+    Traces                       3
+    Width                        307
+    Xmag                         0
+    Yamp                         100
+    YLine                        60
+    YLineColor                   YELLOW
+    YLineVisible                 No
+    Yoffset                      0
+end
+StaticText
+    Name                         Statictext0
+    Alias                        Statictext0
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      POWER
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         36
+    Top                          60
+    Transparent                  Yes
+    Width                        42
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext1
+    Alias                        Statictext1
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      VOLTAGE
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         32
+    Top                          148
+    Transparent                  Yes
+    Width                        54
+    WordWrap                     Yes
+end
+StaticText
+    Name                         Statictext2
+    Alias                        Statictext2
+    Alignment                    Left
+    AutoSize                     Yes
+    Caption                      CURRENT
+    Color                        BLACK
+    Font.Color                   WHITE
+    Font.Effects                 []
+    Font.Name                    Tahoma
+    Font.Size                    9
+    Font.Style                   []
+    Height                       14
+    Left                         32
+    Top                          236
+    Transparent                  Yes
+    Width                        52
+    WordWrap                     Yes
+end
+Strings
+    Name                         Strings0
+    Alias                        Strings0
+    Alignment                    Left
+    BGcolor                      0x262626
+    Height                       22
+    FGcolor                      WHITE
+    Font.Bold                    Yes
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    'Arial Black'
+    Font.Opaque                  Yes
+    Font.Size                    22
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         28
+    Strings                      ''
+    StringsStyle                 Message
+    Top                          36
+    Width                        60
+    OnChanged                    ''
+end
+Strings
+    Name                         Strings1
+    Alias                        Strings1
+    Alignment                    Left
+    BGcolor                      0x262626
+    Height                       22
+    FGcolor                      WHITE
+    Font.Bold                    Yes
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    'Arial Black'
+    Font.Opaque                  Yes
+    Font.Size                    22
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         28
+    Strings                      ''
+    StringsStyle                 Message
+    Top                          124
+    Width                        60
+    OnChanged                    ''
+end
+Strings
+    Name                         Strings2
+    Alias                        Strings2
+    Alignment                    Left
+    BGcolor                      0x262626
+    Height                       22
+    FGcolor                      WHITE
+    Font.Bold                    Yes
+    Font.CharSet                 ANSI
+    Font.Italic                  No
+    Font.Name                    'Arial Black'
+    Font.Opaque                  Yes
+    Font.Size                    22
+    Font.Strikethrough           No
+    Font.Underline               No
+    Left                         28
+    Strings                      ''
+    StringsStyle                 Message
+    Top                          212
+    Width                        60
+    OnChanged                    ''
+end
+UserButton
+    Name                         Userbutton0
+    Alias                        Userbutton0
+    Height                       27
+    Images                       BTN-10w-off.png\nBTN-10w-on.png
+    Left                         136
+    Matrix                       -1
+    Momentary                    On
+    Stretch                      No
+    Top                          4
+    Width                        67
+    OnChanged                    'Report Message'
+end
+UserButton
+    Name                         Userbutton1
+    Alias                        Userbutton1
+    Height                       27
+    Images                       BTN-50w-off.png\nBTN-50w-on.png
+    Left                         212
+    Matrix                       -1
+    Momentary                    No
+    Stretch                      No
+    Top                          4
+    Width                        67
+    OnChanged                    'Report Message'
+end
+UserButton
+    Name                         Userbutton2
+    Alias                        Userbutton2
+    Height                       27
+    Images                       BTN-100w-off.png\nBTN-100w-on.png
+    Left                         284
+    Matrix                       -1
+    Momentary                    Yes
+    Stretch                      No
+    Top                          4
+    Width                        67
+    OnChanged                    'Report Message'
+end
+UserButton
+    Name                         Userbutton3
+    Alias                        Userbutton3
+    Height                       27
+    Images                       BTN-500w-off.png\nBTN-500w-on.png
+    Left                         356
+    Matrix                       -1
+    Momentary                    No
+    Stretch                      No
+    Top                          4
+    Width                        67
+    OnChanged                    'Report Message'
+end
+UserButton
+    Name                         Userbutton4
+    Alias                        Userbutton4
+    Height                       30
+    Images                       BTNPWR-off.png\nBTNPWR-on.png
+    Left                         436
+    Matrix                       -1
+    Momentary                    No
+    Stretch                      No
+    Top                          4
+    Width                        30
+    OnChanged                    'Report Message'
+end
